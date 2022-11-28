@@ -44,7 +44,7 @@ img {
 .container {
   max-width: 1100px;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0 2rem;
 }
 
@@ -355,7 +355,7 @@ table th {
   z-index: 1;
   width: 100%;
   opacity: 0.9;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
 .navbar ul {
@@ -411,4 +411,46 @@ table th {
     text-align: center;
     justify-content: center;
   }
+}
+
+.profile-box{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  border: solid var(--dark-color);
+  background: rgb(255, 255, 255) no-repeat;
+  width: fit-content;
+  padding: 30px;
+  box-shadow: 10px 10px 15px black;
+}
+
+.profile-box .profile-avatar .avatar{
+  height: 240px;
+  width: 220px;
+}
+
+.profile-box .profile-information{
+  margin-left: 20px;
+  font-size: large; 
+}
+
+.profile-box .visit-profile{
+  padding: 10px;
+  cursor: pointer;
+  background: var(--dark-color) no-repeat;
+  color: var(--light-color);
+  margin-top: 15px;
+}
+
+@media (max-width: 720px){
+  .profile-box{
+    flex-direction: column;
+  }
+
+  .profile-box .profile-information{
+    text-align: center;
+    margin: 15px 0 15px 0; 
+    font-size: large; 
+  }
+  
 }

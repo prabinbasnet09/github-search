@@ -80,7 +80,7 @@ class App extends Component {
             <Routes>
               <Route exact path='/' element={
                  <Fragment>
-                  {/* <Alert alert={this.state.alert} /> */}
+                  <Alert alert={this.state.alert} />
                   <Search
                     searchUsers={this.searchUsers}
                     clearUsers={this.clearUsers}
